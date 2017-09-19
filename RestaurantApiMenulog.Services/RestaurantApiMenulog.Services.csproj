@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D53A870-90A8-4AFB-9098-DC77493BF04C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RestaurantApiMenulog.Core</RootNamespace>
+    <AssemblyName>RestaurantApiMenulog.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.11\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\MemoryCacheManager.cs" />
+    <Compile Include="Mapping\RestaurantMapperAdapter.cs" />
+    <Compile Include="Interfaces\ICacheManager.cs" />
+    <Compile Include="Services\Restaurant\RestaurantService.cs" />
+    <Compile Include="Interfaces\IMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantApiMenulog.Domain.Models\RestaurantApiMenulog.Domain.Models.csproj">
+      <Project>{0C776378-215C-4F34-B594-9B74FFBA046C}</Project>
+      <Name>RestaurantApiMenulog.Domain.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestaurantApiMenulog.Models\RestaurantApiMenulog.Models.csproj">
+      <Project>{7ee75036-2318-49af-a4ae-a9635761f041}</Project>
+      <Name>RestaurantApiMenulog.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestaurantApiMenulog.Services.Interfaces\RestaurantApiMenulog.Services.Interfaces.csproj">
+      <Project>{57343f5d-eb03-47e9-ba9f-4d52b12f33ec}</Project>
+      <Name>RestaurantApiMenulog.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestaurantApiMenulog.Utils\RestaurantApiMenulog.Utils.csproj">
+      <Project>{b7d72c8b-ea35-40f0-afed-3aa3a2fc385a}</Project>
+      <Name>RestaurantApiMenulog.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestaurantApiMenulog.Domain.Interfaces\RestaurantApiMenulog.Domain.Interfaces.csproj">
+      <Project>{8DF5AC6E-6728-4895-B8DF-7C4228064066}</Project>
+      <Name>RestaurantApiMenulog.Domain.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

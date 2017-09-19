@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Api", "RestaurantApiMenulog.Api\RestaurantApiMenulog.Api.csproj", "{3A07043C-46BA-4E75-8D2A-BECF694C5FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Services", "RestaurantApiMenulog.Services\RestaurantApiMenulog.Services.csproj", "{0D53A870-90A8-4AFB-9098-DC77493BF04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Models", "RestaurantApiMenulog.Models\RestaurantApiMenulog.Models.csproj", "{7EE75036-2318-49AF-A4AE-A9635761F041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Client", "RestaurantApiMenulog.Client\RestaurantApiMenulog.Client.csproj", "{30C6F6E2-4802-4FB5-B08C-922F60F89081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Services.UnitTests", "RestaurantApiMenulog.Services.UnitTests\RestaurantApiMenulog.Services.UnitTests.csproj", "{C660B656-8F15-4E44-B9C5-DE7B8880EBA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Services.Interfaces", "RestaurantApiMenulog.Services.Interfaces\RestaurantApiMenulog.Services.Interfaces.csproj", "{57343F5D-EB03-47E9-BA9F-4D52B12F33EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Domain", "RestaurantApiMenulog.Domain\RestaurantApiMenulog.Domain.csproj", "{5E63BDE3-A6CB-4FB4-B759-230E1448AAC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Domain.Interfaces", "RestaurantApiMenulog.Domain.Interfaces\RestaurantApiMenulog.Domain.Interfaces.csproj", "{8DF5AC6E-6728-4895-B8DF-7C4228064066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Domain.Models", "RestaurantApiMenulog.Domain.Models\RestaurantApiMenulog.Domain.Models.csproj", "{0C776378-215C-4F34-B594-9B74FFBA046C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantApiMenulog.Utils", "RestaurantApiMenulog.Utils\RestaurantApiMenulog.Utils.csproj", "{B7D72C8B-EA35-40F0-AFED-3AA3A2FC385A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A07043C-46BA-4E75-8D2A-BECF694C5FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A07043C-46BA-4E75-8D2A-BECF694C5FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A07043C-46BA-4E75-8D2A-BECF694C5FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A07043C-46BA-4E75-8D2A-BECF694C5FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D53A870-90A8-4AFB-9098-DC77493BF04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D53A870-90A8-4AFB-9098-DC77493BF04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D53A870-90A8-4AFB-9098-DC77493BF04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D53A870-90A8-4AFB-9098-DC77493BF04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE75036-2318-49AF-A4AE-A9635761F041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE75036-2318-49AF-A4AE-A9635761F041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE75036-2318-49AF-A4AE-A9635761F041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE75036-2318-49AF-A4AE-A9635761F041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C6F6E2-4802-4FB5-B08C-922F60F89081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C6F6E2-4802-4FB5-B08C-922F60F89081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C6F6E2-4802-4FB5-B08C-922F60F89081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C6F6E2-4802-4FB5-B08C-922F60F89081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C660B656-8F15-4E44-B9C5-DE7B8880EBA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C660B656-8F15-4E44-B9C5-DE7B8880EBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C660B656-8F15-4E44-B9C5-DE7B8880EBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C660B656-8F15-4E44-B9C5-DE7B8880EBA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57343F5D-EB03-47E9-BA9F-4D52B12F33EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57343F5D-EB03-47E9-BA9F-4D52B12F33EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57343F5D-EB03-47E9-BA9F-4D52B12F33EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57343F5D-EB03-47E9-BA9F-4D52B12F33EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E63BDE3-A6CB-4FB4-B759-230E1448AAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E63BDE3-A6CB-4FB4-B759-230E1448AAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E63BDE3-A6CB-4FB4-B759-230E1448AAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E63BDE3-A6CB-4FB4-B759-230E1448AAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF5AC6E-6728-4895-B8DF-7C4228064066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF5AC6E-6728-4895-B8DF-7C4228064066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF5AC6E-6728-4895-B8DF-7C4228064066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF5AC6E-6728-4895-B8DF-7C4228064066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C776378-215C-4F34-B594-9B74FFBA046C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C776378-215C-4F34-B594-9B74FFBA046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C776378-215C-4F34-B594-9B74FFBA046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C776378-215C-4F34-B594-9B74FFBA046C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D72C8B-EA35-40F0-AFED-3AA3A2FC385A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D72C8B-EA35-40F0-AFED-3AA3A2FC385A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D72C8B-EA35-40F0-AFED-3AA3A2FC385A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D72C8B-EA35-40F0-AFED-3AA3A2FC385A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
